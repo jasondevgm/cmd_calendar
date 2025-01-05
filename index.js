@@ -77,6 +77,7 @@ async function saveDataAsync(data) {
     try {
         await fs.writeFile('db.json', JSON.stringify(data));
         term('JSON data saved successfully!');
+        main()
     } catch (err) {
         term('Error writing file', err);
     }
@@ -526,7 +527,6 @@ async function main() {
         const namePrompt = prompt('Per començar, ens podries dir el teu nom? 📝: ');
         localUser = new User(generateUserId(), namePrompt, new Date().getTime() / 1000);
         saveDataAsync(localUser);
-        main();
     }
 }
 

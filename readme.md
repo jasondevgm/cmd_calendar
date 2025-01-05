@@ -2,6 +2,8 @@
 
 This is a simple calendar application designed to help users manage their events in an intuitive and easy way. The application allows users to create, read, update, and delete events.
 
+![CMD-Calendar!](cmd-calendar.gif "CMD-Calendar")
+
 ## Features
 
 - **Create Events**: Users can create new events with details such as title, date, time, location, and description.
